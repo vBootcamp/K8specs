@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  namespace: master
+  namespace: jimmya
   name: test-deployment
 spec:
   activeDeadlineSeconds: 26
@@ -15,7 +15,7 @@ spec:
     - "-c"
     env:
     - name: namespace
-      value: master
+      value: jimmya
     - name: deployment
       value: wordpress
     args:
